@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Arte Joias do Futuro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Cores personalizadas para referência */
+        .bg-laranja-entardecer { background-color: #FCA152; }
+        .text-laranja-entardecer { color: #FCA152; }
+        .border-laranja-entardecer { border-color: #FCA152; }
+        .hover\:bg-laranja-entardecer-dark:hover { background-color: #f89038; }
+
+        .bg-cinza-grafite { background-color: #333333; }
+        .text-cinza-grafite { color: #333333; }
+
+        .bg-branco-gelo { background-color: #F7F7F7; }
+
+        .bg-azul-picadeiro { background-color: #2D5D7C; }
+        .text-azul-picadeiro { color: #2D5D7C; }
+        .hover\:bg-azul-picadeiro-dark:hover { background-color: #244a63; }
+        
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/333333/F7F7F7?text=Crian%C3%A7as+em+aula+de+circo');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-cinza-grafite">
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Substitua o src pela sua logo BRANCO-NOME-LATERL.png -->
+                <img src="https://placehold.co/180x45/333333/FFFFFF?text=Joias+do+Futuro" alt="Logo Joias do Futuro" class="h-10">
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#historia" class="hover:text-laranja-entardecer transition-colors">A Nossa História</a>
+                <a href="#projetos" class="hover:text-laranja-entardecer transition-colors">O Que Fazemos</a>
+                <a href="#parceiros" class="hover:text-laranja-entardecer transition-colors">Parceiros</a>
+                <a href="#ajudar" class="hover:text-laranja-entardecer transition-colors">Participe</a>
+            </div>
+            <a href="#doar-agora" class="hidden lg:block bg-laranja-entardecer text-white font-bold py-2 px-6 rounded-full hover:bg-laranja-entardecer-dark transition-transform hover:scale-105">
+                DOE AGORA
+            </a>
+            <!-- Otimização Mobile: Botão de menu mais proeminente -->
+            <button id="mobile-menu-button" class="md:hidden text-3xl p-2 -mr-2">☰</button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col space-y-4">
+             <a href="#historia" class="py-2 text-lg hover:text-laranja-entardecer transition-colors">A Nossa História</a>
+             <a href="#projetos" class="py-2 text-lg hover:text-laranja-entardecer transition-colors">O Que Fazemos</a>
+             <a href="#parceiros" class="py-2 text-lg hover:text-laranja-entardecer transition-colors">Parceiros</a>
+             <a href="#ajudar" class="py-2 text-lg hover:text-laranja-entardecer transition-colors">Participe</a>
+             <a href="#doar-agora" class="bg-laranja-entardecer text-white font-bold py-3 px-6 rounded-full hover:bg-laranja-entardecer-dark transition-transform hover:scale-105 text-center text-xl mt-4">
+                DOE AGORA
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECÇÃO HERO -->
+        <section class="hero-bg h-[90vh] flex items-center justify-center text-white text-center px-4">
+            <div class="bg-black/60 p-6 md:p-12 rounded-lg">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-wider">Onde a arte</h1>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-wider text-laranja-entardecer">transforma futuros.</h1>
+                <a href="http://benfeitoria.com/joiasdofuturo" target="_blank" class="mt-8 inline-block bg-laranja-entardecer text-white font-bold text-lg py-3 px-8 md:py-4 md:px-10 rounded-full hover:bg-laranja-entardecer-dark transition-transform hover:scale-105 shadow-lg">
+                    APOIE A NOSSA CAMPANHA
+                </a>
+            </div>
+        </section>
+
+        <!-- SECÇÃO PROBLEMA E SOLUÇÃO -->
+        <section id="projetos" class="py-16 md:py-20 bg-branco-gelo">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Do Risco à Oportunidade</h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl">
+                    No coração do Complexo da Maré, o talento de muitas crianças e jovens corre o risco de se perder em meio às adversidades. Nós existimos para transformar esse risco em oportunidade, usando a arte circense como uma poderosa ferramenta de inclusão, esperança e cidadania.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECÇÃO NOSSA HISTÓRIA -->
+        <section id="historia" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x600/2D5D7C/FFFFFF?text=Elon+Souza" alt="Fundador Elon Souza" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Uma Vida Dedicada à Arte e à Comunidade</h2>
+                    <p class="text-lg mb-6">
+                        A nossa história começa com o sonho de um menino da Maré que se tornou um artista circense de renome internacional. Depois de brilhar nos palcos do mundo, Elon Souza da Silva retornou à sua comunidade para realizar o seu maior espetáculo: fundar o Instituto de Arte Joias do Futuro e devolver em forma de oportunidade tudo o que a arte lhe deu.
+                    </p>
+                    <a href="#" class="bg-azul-picadeiro text-white font-bold py-3 px-8 rounded-full hover:bg-azul-picadeiro-dark transition-transform hover:scale-105">
+                        CONHEÇA A JORNADA DO FUNDADOR
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO IMPACTO -->
+        <section id="impacto" class="py-16 md:py-20 bg-cinza-grafite text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">A Sua Ajuda em Ação</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center">
+                        <span class="text-5xl md:text-6xl font-black text-laranja-entardecer">+40</span>
+                        <p class="mt-2 text-lg md:text-xl">Crianças e jovens atendidos</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-5xl md:text-6xl font-black text-laranja-entardecer">+200</span>
+                        <p class="mt-2 text-lg md:text-xl">Horas de oficinas gratuitas por mês</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-5xl md:text-6xl font-black text-laranja-entardecer">100%</span>
+                        <p class="mt-2 text-lg md:text-xl">De dedicação para formar cidadãos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO COMO AJUDAR -->
+        <section id="ajudar" class="py-16 md:py-20 bg-branco-gelo">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Faça Parte Deste Espetáculo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div id="doar-agora" class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-2xl font-bold mb-4">DOE AGORA</h3>
+                        <p class="mb-6 flex-grow">A sua doação, de qualquer valor, ajuda-nos a manter as luzes do picadeiro acesas e os sonhos das nossas crianças vivos.</p>
+                        <a href="http://benfeitoria.com/joiasdofuturo" target="_blank" class="w-full bg-laranja-entardecer text-white font-bold py-3 px-8 rounded-full hover:bg-laranja-entardecer-dark">QUERO DOAR</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-2xl font-bold mb-4">SEJA VOLUNTÁRIO(A)</h3>
+                        <p class="mb-6 flex-grow">O seu tempo e o seu talento são presentes preciosos. Temos espaço para diversas habilidades. Junte-se à nossa trupe!</p>
+                        <a href="#" class="w-full bg-azul-picadeiro text-white font-bold py-3 px-8 rounded-full hover:bg-azul-picadeiro-dark">QUERO SER VOLUNTÁRIO(A)</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-2xl font-bold mb-4">EMPRESAS PARCEIRAS</h3>
+                        <p class="mb-6 flex-grow">Associe a sua marca a um projeto de alto impacto social e transforme a realidade da nossa comunidade connosco.</p>
+                        <a href="#" class="w-full bg-azul-picadeiro text-white font-bold py-3 px-8 rounded-full hover:bg-azul-picadeiro-dark">SEJA UMA EMPRESA PARCEIRA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO ÚLTIMAS NOTÍCIAS (BLOG) -->
+        <section id="noticias" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Fique por Dentro do Nosso Universo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Post 1 -->
+                    <div class="bg-branco-gelo rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform">
+                        <img src="https://placehold.co/600x400/FCA152/333333?text=Evento+na+Comunidade" alt="Imagem da notícia" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <span class="text-sm font-bold text-azul-picadeiro">EVENTOS</span>
+                            <h3 class="text-xl font-bold my-2">O Nosso Espetáculo de Fim de Ano Encanta a Comunidade</h3>
+                            <p class="text-base mb-4">Veja como foi a apresentação que coroou um ano de muito trabalho e dedicação dos nossos pequenos artistas.</p>
+                            <a href="#" class="font-bold text-laranja-entardecer hover:text-laranja-entardecer-dark">Leia Mais →</a>
+                        </div>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="bg-branco-gelo rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform">
+                        <img src="https://placehold.co/600x400/2D5D7C/FFFFFF?text=Bastidores+das+Aulas" alt="Imagem da notícia" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <span class="text-sm font-bold text-azul-picadeiro">BASTIDORES</span>
+                            <h3 class="text-xl font-bold my-2">A Importância da Disciplina e do Foco no Circo</h3>
+                            <p class="text-base mb-4">A nossa pedagoga explica como as atividades circenses desenvolvem habilidades essenciais para a vida.</p>
+                            <a href="#" class="font-bold text-laranja-entardecer hover:text-laranja-entardecer-dark">Leia Mais →</a>
+                        </div>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="bg-branco-gelo rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform">
+                        <img src="https://placehold.co/600x400/333333/FFFFFF?text=Depoimento" alt="Imagem da notícia" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <span class="text-sm font-bold text-azul-picadeiro">HISTÓRIAS DE VIDA</span>
+                            <h3 class="text-xl font-bold my-2">"O Circo deu-me uma Família": Depoimento da Aluna Maria</h3>
+                            <p class="text-base mb-4">Conheça a história emocionante de uma das nossas joias e como o instituto mudou a sua perspetiva de futuro.</p>
+                            <a href="#" class="font-bold text-laranja-entardecer hover:text-laranja-entardecer-dark">Leia Mais →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SECÇÃO: PARCEIROS -->
+        <section id="parceiros" class="py-16 md:py-20 bg-branco-gelo">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Quem Apoia o Nosso Espetáculo</h2>
+                <p class="max-w-2xl mx-auto text-lg mb-12">Agradecemos imensamente às empresas e organizações que acreditam no nosso sonho e investem na transformação social através da arte.</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                    <!-- Simulação de logos de parceiros -->
+                    <img src="https://placehold.co/150x60/cccccc/999999?text=Empresa+Parceira" alt="Logo de parceiro" class="h-12">
+                    <img src="https://placehold.co/150x60/cccccc/999999?text=Apoiador+Cultural" alt="Logo de parceiro" class="h-12">
+                    <img src="https://placehold.co/150x60/cccccc/999999?text=Marca+Amiga" alt="Logo de parceiro" class="h-12">
+                    <img src="https://placehold.co/150x60/cccccc/999999?text=Fundação+Social" alt="Logo de parceiro" class="h-12">
+                    <img src="https://placehold.co/150x60/cccccc/999999?text=Outro+Parceiro" alt="Logo de parceiro" class="h-12">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO FEED DO INSTAGRAM -->
+        <section id="instagram" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Siga o Nosso Espetáculo</h2>
+                <a href="https://www.instagram.com/joiasdofuturo/" target="_blank" class="text-2xl font-bold text-azul-picadeiro hover:text-laranja-entardecer transition-colors">@joiasdofuturo</a>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2 mt-8">
+                    <!-- Aqui entraria o widget do Instagram. Simulado com imagens. -->
+                    <img src="https://placehold.co/300x300/FCA152/FFFFFF?text=Joias" alt="Post do Instagram" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/300x300/2D5D7C/FFFFFF?text=do" alt="Post do Instagram" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/300x300/333333/FFFFFF?text=Futuro" alt="Post do Instagram" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/300x300/FCA152/FFFFFF?text=Arte" alt="Post do Instagram" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/300x300/2D5D7C/FFFFFF?text=Transforma" alt="Post do Instagram" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/300x300/333333/FFFFFF?text=@" alt="Post do Instagram" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-cinza-grafite text-white pt-12 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://placehold.co/180x45/FFFFFF/333333?text=Joias+do+Futuro" alt="Logo Joias do Futuro" class="h-10 mx-auto mb-6">
+            <p class="mb-2">Instituto de Arte Joias do Futuro</p>
+            <p class="mb-2">Comunidade Nova Holanda - Complexo da Maré, Rio de Janeiro - RJ</p>
+            <p class="mb-6">contato@joiasdofuturo.com.br</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/joiasdofuturo/" target="_blank" class="text-2xl hover:text-laranja-entardecer transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.917 3.917 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.444.01 10.172 0 8 0zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.232s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276C5.61.01 5.864 0 8 0zm0 4.865A3.135 3.135 0 1 0 8 12.28a3.135 3.135 0 0 0 0-6.28zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm3.5-7.5a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2024 Instituto de Arte Joias do Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Fechar menu mobile ao clicar num link
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
